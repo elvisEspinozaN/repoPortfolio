@@ -15,6 +15,19 @@ const Main = (props) => {
     setRepo(data);
   };
 
+  const createRepo = async (repo) => {
+    // post that creates
+    await fetch(URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "Appplication/json",
+      },
+      body: JSON.stringify(repo),
+    });
+    // listed repos
+    getRepo();
+  };
+
   return (
     <main>
       <Switch>
