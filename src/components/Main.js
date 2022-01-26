@@ -28,6 +28,8 @@ const Main = (props) => {
     getRepo();
   };
 
+  useEffect(() => getRepo(), []);
+
   return (
     <main>
       <Switch>
