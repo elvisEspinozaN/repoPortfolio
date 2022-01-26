@@ -5,7 +5,12 @@ import Show from "../pages/Show";
 const Main = (props) => {
   return (
     <main>
-      <Switch></Switch>
+      <Switch>
+        <Route excat path="/">
+          <Index />
+        </Route>
+        <Route path="/repo/:id" render={(rp) => <Show {...rp} />} />
+      </Switch>
     </main>
   );
 };
