@@ -76,6 +76,9 @@ const Create = (props) => {
             />
           </div>
         </div>
+        <div className="form-action">
+          <button type="submit">Upload</button>
+        </div>
       </form>
     </div>
   );
