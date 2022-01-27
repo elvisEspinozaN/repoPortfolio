@@ -65,6 +65,16 @@ const Create = (props) => {
               onChange={changeHandler}
             />
           </div>
+          <div className="form-control">
+            <label>Repo Link</label>
+            <input
+              type="text"
+              name="url"
+              value={form.url}
+              placeholder="repo link"
+              onChange={changeHandler}
+            />
+          </div>
         </div>
       </form>
     </div>
