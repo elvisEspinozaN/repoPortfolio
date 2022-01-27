@@ -34,10 +34,10 @@ const Main = (props) => {
   return (
     <main>
       <Switch>
-        <Route excat path="/">
-          <Index />
+        <Route exact path="/">
+          <Index repo={repo} />
         </Route>
-        <Route path="/repo/create" createRepo={createRepo} repo={repo} />
+        <Route path="/repo/create" repo={repo} createRepo={createRepo}></Route>
         <Route path="/repo/:id" render={(rp) => <Show {...rp} />} />
       </Switch>
     </main>
