@@ -60,6 +60,9 @@ const Create = (props) => {
             <input
               type="number"
               name="progress"
+              min="0"
+              step="0"
+              max="100"
               value={form.progress}
               placeholder="progress percentage"
               onChange={changeHandler}
