@@ -29,6 +29,24 @@ const Create = (props) => {
     });
     props.history.push("/repo");
   };
+
+  return (
+    <div className="form">
+      <form onSubmit={submitHandler}>
+        <div className="form-control">
+          <div className="form-control">
+            <label>Author</label>
+            <input
+              type="text"
+              name="author"
+              value={form.author}
+              onChange={changeHandler}
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+  );
 };
 
 export default Create;
