@@ -3,15 +3,12 @@ import { Link } from "react-router-dom";
 
 const Create = (props) => {
   // state that hold form data
-  const [form, setForm] = useState(
-    {
-      author: "",
-      pName: "",
-      progress: "",
-      url: "",
-    },
-    { timestamp: true }
-  );
+  const [form, setForm] = useState({
+    author: "",
+    pName: "",
+    progress: "",
+    url: "",
+  });
 
   // submit functions
   const submitHandler = (evt) => {
