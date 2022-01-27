@@ -10,6 +10,14 @@ const Create = (props) => {
     url: "",
   });
 
+  // change functions
+  const changeHandler = (evt) => {
+    setForm({
+      ...form,
+      [evt.target.name]: evt.target.value,
+    });
+  };
+
   // submit functions
   const submitHandler = (evt) => {
     evt.preventDefault();
@@ -20,6 +28,7 @@ const Create = (props) => {
       progress: "",
       url: "",
     });
+    props.history.push("/repo");
   };
 };
 
