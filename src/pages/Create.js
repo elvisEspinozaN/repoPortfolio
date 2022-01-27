@@ -40,6 +40,17 @@ const Create = (props) => {
               type="text"
               name="author"
               value={form.author}
+              placeholder="author name"
+              onChange={changeHandler}
+            />
+          </div>
+          <div className="form-control">
+            <label>Project Name</label>
+            <input
+              type="text"
+              name="pName"
+              value={form.pName}
+              placeholder="porject name"
               onChange={changeHandler}
             />
           </div>
