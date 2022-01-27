@@ -13,6 +13,12 @@ const Index = (props) => {
       </div>
     ));
   };
+
+  const loading = () => {
+    return <h1>Loading</h1>;
+  };
+
+  return props.repo ? loaded() : loading();
 };
 
 export default Index;
