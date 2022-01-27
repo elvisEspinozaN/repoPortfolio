@@ -34,6 +34,7 @@ const Create = (props) => {
     <div className="form">
       <form onSubmit={submitHandler}>
         <div className="form-control">
+          <h1>Upload Your Repo</h1>
           <div className="form-control">
             <label>Author</label>
             <input
@@ -51,6 +52,16 @@ const Create = (props) => {
               name="pName"
               value={form.pName}
               placeholder="porject name"
+              onChange={changeHandler}
+            />
+          </div>
+          <div className="form-control">
+            <label>Progress</label>
+            <input
+              type="number"
+              name="progress"
+              value={form.progress}
+              placeholder="progress percentage"
               onChange={changeHandler}
             />
           </div>
