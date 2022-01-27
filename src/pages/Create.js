@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-//
 const Create = (props) => {
   // state that hold form data
   const [form, setForm] = useState(
@@ -13,6 +12,18 @@ const Create = (props) => {
     },
     { timestamp: true }
   );
+
+  // submit functions
+  const submitHandler = (evt) => {
+    evt.preventDefault();
+    props.createRepo(setForm);
+    setForm({
+      author: "",
+      pName: "",
+      progress: "",
+      url: "",
+    });
+  };
 };
 
 export default Create;
