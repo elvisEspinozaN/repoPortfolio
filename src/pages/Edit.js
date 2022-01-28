@@ -20,7 +20,7 @@ const Edit = (props) => {
   const submitHandler = (evt) => {
     evt.preventDefault();
     props.updateRepo(edit, repo._id);
-    props.history.push("/repo");
+    props.history.push("/");
   };
 
   return (

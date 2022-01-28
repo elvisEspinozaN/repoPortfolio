@@ -9,7 +9,7 @@ const Show = (props) => {
 
   const deleteHandlerAction = () => {
     props.deleteRepo(repos._id);
-    props.history.push("/repo");
+    props.history.push("/");
   };
 
   return (
