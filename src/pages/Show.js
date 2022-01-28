@@ -7,6 +7,11 @@ const Show = (props) => {
     props.history.push(`/repo/${id}/edit`);
   };
 
+  const deleteHandlerAction = () => {
+    props.deleteRepo(repos._id);
+    props.history.push("/repo");
+  };
+
   return (
     <div className="show-repo">
       <div className="show-repos">
