@@ -61,10 +61,8 @@ const Main = (props) => {
         </Route>
         <Route
           path="/repo/create"
-          repo={repo}
-          createRepo={createRepo}
-          component={Create}
-        ></Route>
+          render={(rp) => <Create {...rp} createRepo={createRepo} />}
+        />
         <Route
           path="/repo/:id"
           render={(rp) => (
