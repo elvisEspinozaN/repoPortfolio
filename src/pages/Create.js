@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Create.css";
 
 const Create = (props) => {
   // state that hold form data
@@ -33,7 +34,7 @@ const Create = (props) => {
   return (
     <div className="form">
       <form onSubmit={submitHandler}>
-        <div className="form-control">
+        <div className="form-controls">
           <h1>Upload Your Repo</h1>
           <div className="form-control">
             <label>Author</label>
@@ -79,7 +80,7 @@ const Create = (props) => {
             />
           </div>
         </div>
-        <div className="form-action">
+        <div className="form-actions">
           <button className="button" type="submit">
             Upload
           </button>
