@@ -42,6 +42,15 @@ const Main = (props) => {
     getRepo();
   };
 
+  const deleteRepo = async (id) => {
+    // delete request to repo
+    await fetch(URL + id, {
+      method: "DELETE",
+    });
+    // update
+    getRepo();
+  };
+
   useEffect(() => getRepo(), []);
 
   return (
