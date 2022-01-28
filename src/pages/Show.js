@@ -20,8 +20,12 @@ const Show = (props) => {
         <h2>{repos.url}</h2>
         <h2>{repos.progress}</h2>
       </div>
-      <button onClick={editHandlerAction}>Edit</button>
-      <button onClick={deleteHandlerAction}>Delete</button>
+      <button className="button" onClick={editHandlerAction}>
+        Edit
+      </button>
+      <button className="button" onClick={deleteHandlerAction}>
+        Delete
+      </button>
     </div>
   );
 };

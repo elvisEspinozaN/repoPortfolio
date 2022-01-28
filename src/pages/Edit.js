@@ -72,7 +72,9 @@ const Edit = (props) => {
           </div>
         </div>
         <div className="form-action">
-          <button type="submit">Edit</button>
+          <button className="button" type="submit">
+            Edit
+          </button>
         </div>
       </form>
     </div>
