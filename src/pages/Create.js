@@ -27,7 +27,7 @@ const Create = (props) => {
       progress: "",
       url: "",
     });
-    props.history.push("/");
+    props.history.push("/repo");
   };
 
   return (

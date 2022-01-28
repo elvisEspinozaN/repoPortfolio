@@ -8,7 +8,7 @@ const Main = (props) => {
   const [repo, setRepo] = useState([]);
 
   // const URL = "http://localhost:3001/repo/";
-  const URL = "https://repo-portfolio.herokuapp.com/";
+  const URL = "https://repo-portfolio.herokuapp.com/repo/";
 
   const getRepo = async () => {
     const response = await fetch(URL);
@@ -34,7 +34,7 @@ const Main = (props) => {
   return (
     <main>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/repo">
           <Index repo={repo} />
         </Route>
         <Route
