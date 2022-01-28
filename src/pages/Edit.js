@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Edit.css";
 
 const Edit = (props) => {
   const id = props.match.params.id;
@@ -23,7 +24,7 @@ const Edit = (props) => {
   };
 
   return (
-    <div className="form">
+    <div className="edit-controls form-controls">
       <form onSubmit={submitHandler}>
         <div className="form-control">
           <h1>Edit Your Repo</h1>
