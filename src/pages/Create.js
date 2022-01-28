@@ -20,14 +20,14 @@ const Create = (props) => {
   // submit functions
   const submitHandler = (evt) => {
     evt.preventDefault();
-    props.createRepo(setForm);
+    props.createRepo(form);
     setForm({
       author: "",
       pName: "",
       progress: "",
       url: "",
     });
-    props.history.push("/repo");
+    props.history.push("/");
   };
 
   return (
