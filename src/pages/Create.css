@@ -10,6 +10,7 @@
   font-weight: bold;
   margin-bottom: 0.5rem;
   display: block;
+  text-align: left;
 }
 
 .form-control input {
@@ -22,7 +23,7 @@
 }
 
 .form-actions {
-  text-align: right;
+  text-align: center;
 }
 
 .form-controls {
