@@ -37,7 +37,12 @@ const Main = (props) => {
         <Route exact path="/">
           <Index repo={repo} />
         </Route>
-        <Route path="/repo/create" repo={repo} createRepo={createRepo}></Route>
+        <Route
+          path="/repo/create"
+          repo={repo}
+          createRepo={createRepo}
+          component={Create}
+        ></Route>
         <Route path="/repo/:id" render={(rp) => <Show {...rp} />} />
       </Switch>
     </main>

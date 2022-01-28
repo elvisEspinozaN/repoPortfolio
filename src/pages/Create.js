@@ -51,7 +51,7 @@ const Create = (props) => {
               type="text"
               name="pName"
               value={form.pName}
-              placeholder="porject name"
+              placeholder="project name"
               onChange={changeHandler}
             />
           </div>
@@ -64,7 +64,7 @@ const Create = (props) => {
               step="0"
               max="100"
               value={form.progress}
-              placeholder="progress percentage"
+              placeholder="%"
               onChange={changeHandler}
             />
           </div>
