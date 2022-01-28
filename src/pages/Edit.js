@@ -21,6 +21,62 @@ const Edit = (props) => {
     props.updateRepo(edit, repo._id);
     props.history.push("/repo");
   };
+
+  return (
+    <div className="form">
+      <form onSubmit={submitHandler}>
+        <div className="form-control">
+          <h1>Edit Your Repo</h1>
+          <div className="form-control">
+            <label>Author</label>
+            <input
+              type="text"
+              name="author"
+              value={edit.author}
+              placeholder="author name"
+              onChange={changeHandler}
+            />
+          </div>
+          <div className="form-control">
+            <label>Project Name</label>
+            <input
+              type="text"
+              name="pName"
+              value={edit.pName}
+              placeholder="project name"
+              onChange={changeHandler}
+            />
+          </div>
+          <div className="form-control">
+            <label>Progress</label>
+            <input
+              type="number"
+              name="progress"
+              min="0"
+              step="0"
+              max="100"
+              value={edit.progress}
+              placeholder="%"
+              onChange={changeHandler}
+            />
+          </div>
+          <div className="form-control">
+            <label>Repo Link</label>
+            <input
+              type="text"
+              name="url"
+              value={edit.url}
+              placeholder="repo link"
+              onChange={changeHandler}
+            />
+          </div>
+        </div>
+        <div className="form-action">
+          <button type="submit">Edit</button>
+        </div>
+      </form>
+    </div>
+  );
 };
 
 export default Edit;
