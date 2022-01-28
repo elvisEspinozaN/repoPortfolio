@@ -3,12 +3,19 @@ const Show = (props) => {
   const repo = props.repo;
   const repos = repo.find((p) => p._id === id);
 
+  const editHandlerAction = () => {
+    props.history.push(`/repo/${id}/edit`);
+  };
+
   return (
     <div className="show-repo">
-      <h1>{repos.author}</h1>
-      <h2>{repos.pName}</h2>
-      <h2>{repos.url}</h2>
-      <h2>{repos.progress}</h2>
+      <div className="show-repos">
+        <h1>{repos.author}</h1>
+        <h2>{repos.pName}</h2>
+        <h2>{repos.url}</h2>
+        <h2>{repos.progress}</h2>
+      </div>
+      <button onClick={editHandlerAction}>Edit</button>
     </div>
   );
 };
