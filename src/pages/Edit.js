@@ -14,6 +14,13 @@ const Edit = (props) => {
       [evt.target.name]: evt.target.value,
     }));
   };
+
+  // handle submit
+  const submitHandler = (evt) => {
+    evt.preventDefault();
+    props.updateRepo(edit, repo._id);
+    props.history.push("/repo");
+  };
 };
 
 export default Edit;
