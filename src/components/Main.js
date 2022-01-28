@@ -29,6 +29,19 @@ const Main = (props) => {
     getRepo();
   };
 
+  const updateRepo = async (repo, id) => {
+    //request ot create
+    await fetch(URL + id, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "Application/json",
+      },
+      body: JSON.stringify(repo),
+    });
+    // update
+    getRepo();
+  };
+
   useEffect(() => getRepo(), []);
 
   return (
