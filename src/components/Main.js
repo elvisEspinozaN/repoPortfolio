@@ -7,23 +7,25 @@ import Create from "../pages/Create";
 const Main = (props) => {
   const [repo, setRepo] = useState([]);
 
-  // const URL = "http://localhost:3001/repo/";
-  const URL = "https://repo-portfolio.herokuapp.com/repo/";
+  const URL = "http://localhost:3001/repo/";
+  // const URL = "https://repo-portfolio.herokuapp.com/repo";
 
   const getRepo = async () => {
     const response = await fetch(URL);
     const data = await response.json();
+    console.log(data);
     setRepo(data);
   };
 
-  const createRepo = async (repo) => {
+  const createRepo = async (rep) => {
     // post that creates
+    console.log(rep);
     await fetch(URL, {
       method: "POST",
       headers: {
         "Content-Type": "Appplication/json",
       },
-      body: JSON.stringify(repo),
+      body: JSON.stringify(rep),
     });
     // listed repos
     getRepo();
