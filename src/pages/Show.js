@@ -1,7 +1,8 @@
+import "./Show.css";
+
 const Show = (props) => {
   const id = props.match.params.id;
-  const repo = props.repo;
-  const repos = repo.find((p) => p._id === id);
+  const repos = props.repo.find((repo) => repo._id === id);
 
   const editHandlerAction = () => {
     props.history.push(`/repo/${id}/edit`);
@@ -20,10 +21,10 @@ const Show = (props) => {
         <h2>{repos.url}</h2>
         <h2>{repos.progress}</h2>
       </div>
-      <button className="button" onClick={editHandlerAction}>
+      <button className="show-button" onClick={editHandlerAction}>
         Edit
       </button>
-      <button className="button" onClick={deleteHandlerAction}>
+      <button className="show-delete-button" onClick={deleteHandlerAction}>
         Delete
       </button>
     </div>

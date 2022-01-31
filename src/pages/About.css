@@ -1,0 +1,67 @@
+.about-body {
+  margin: 0;
+  padding: 0;
+  height: 880px;
+  background: #887878;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", monospace;
+}
+
+.about-social {
+  color: #1771a7;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.about-g {
+  color: white;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.about-a {
+  margin: 0 15px;
+}
+
+.about-container {
+  min-width: 320px;
+  max-width: 450px;
+  min-height: 500px;
+  background: #2b2b2b;
+  padding: 15px;
+  font-size: 16px;
+  color: #fff;
+  text-align: justify;
+}
+
+.about-the {
+  word-spacing: 1px;
+  color: #cc7832;
+  display: block;
+  margin-top: 20px;
+}
+
+.about-app {
+  font-size: 20px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+.about-next {
+  display: block;
+  font-size: 20px;
+  /* margin: 20px 0 -17px 0; */
+}
+
+.a {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.a:hover {
+  color: #1771a7;
+  text-decoration: underline;
+}

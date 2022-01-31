@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+.home-container {
+  background-color: #887878;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+}
+
+.home-title {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: white;
+}
+
+.home-title p {
+  font-family: "Courier New", monospace;
+  font-weight: 100;
+  color: black;
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
+  line-height: 200px;
+}
+
+.home-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-direction: wrap;
+  width: auto;
+  float: right;
+  right: 15px;
+  height: 100%;
+  align-content: space-around;
+  position: fixed;
+  bottom: 20px;
+  top: 15px;
+}
+
+.home-about {
+  margin: auto;
+  background-color: white;
+  padding: 1em;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  line-height: 80px;
+  text-decoration: none;
+  border-radius: 100px;
+  color: black;
+  font-family: "Courier New", monospace;
+  font-weight: 100;
+}
+
+.home-git {
+  margin: auto;
+  background-color: white;
+  padding: 1em;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  line-height: 80px;
+  text-decoration: none;
+  border-radius: 100px;
+  color: black;
+  font-family: "Courier New", monospace;
+  font-weight: 100;
+}
+
+.home-linkedin {
+  margin: auto;
+  background-color: white;
+  padding: 1em;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  margin: auto;
+  line-height: 80px;
+  text-decoration: none;
+  border-radius: 100px;
+  color: black;
+  font-family: "Courier New", monospace;
+  font-weight: 100;
+}
+
+.home-p {
+  width: auto;
+  height: auto;
+  color: white;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  font-size: 2em;
+  line-break: 15px;
+  line-height: 40px;
+  margin: auto;
+  font-size: 1em;
+}
+
+.home-section a,
+.home-section link {
+  font-size: 0.8em;
+  padding: 1em;
+  line-height: 45px;
+}
+
+.home-link {
+  margin-top: 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.4s;
+}
+
+.home-link:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline;
+}

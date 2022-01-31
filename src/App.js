@@ -1,14 +1,20 @@
-import "./App.css";
-import "./styles.scss";
 import "./index.css";
-import Header from "./components/Header";
+
 import Main from "./components/Main";
 
+import { useEffect, useState } from "react";
+import { auth } from "./services/firebase";
+
 function App() {
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => setUser(user));
+  }, []);
+
   return (
     <div className="App">
-      <Header />
-      <Main />
+      <Main user={user} />
     </div>
   );
 }

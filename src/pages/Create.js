@@ -28,7 +28,7 @@ const Create = (props) => {
       progress: "",
       url: "",
     });
-    props.history.push("/");
+    props.history.push("/repo");
   };
 
   return (
@@ -41,7 +41,7 @@ const Create = (props) => {
             type="text"
             name="author"
             value={form.author}
-            placeholder="author name"
+            placeholder="Author Name"
             onChange={changeHandler}
           />
         </div>
@@ -51,7 +51,7 @@ const Create = (props) => {
             type="text"
             name="pName"
             value={form.pName}
-            placeholder="project name"
+            placeholder="Repo Name"
             onChange={changeHandler}
           />
         </div>
@@ -64,7 +64,7 @@ const Create = (props) => {
             step="0"
             max="100"
             value={form.progress}
-            placeholder="%"
+            placeholder="Progress Percentage"
             onChange={changeHandler}
           />
         </div>
@@ -74,7 +74,7 @@ const Create = (props) => {
             type="text"
             name="url"
             value={form.url}
-            placeholder="repo link"
+            placeholder="Repo Link"
             onChange={changeHandler}
           />
         </div>
