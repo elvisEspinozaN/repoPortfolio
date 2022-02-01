@@ -36,7 +36,7 @@ const Show = (props) => {
             {repos.author}
           </p>
           <p className="show-p show-url">{repos.url}</p>
-          <p className="show-p">{repos.progress}</p>
+          <p className="show-p">{repos.progress}%</p>
           <div class="show-bar"></div>
         </div>
       </div>
