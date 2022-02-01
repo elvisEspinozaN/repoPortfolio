@@ -1,0 +1,107 @@
+.show-body {
+  font-family: Segoe UI;
+  margin: 0;
+  padding: 0;
+  background: #887878;
+  min-height: 100vh;
+  display: flex;
+  font-family: "Courier New", monospace;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+.show-container {
+  width: 800px;
+  height: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.show-container,
+.show-incl-cont {
+  width: 800px;
+  height: 380px;
+  display: flex;
+}
+
+.show-incl-o {
+  width: 380px;
+  height: 380px;
+  background: #88787827;
+  border-radius: 5px;
+}
+
+.show-incl-o:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-incl-o:nth-child(2) {
+  margin-left: auto;
+}
+
+.show-incl-o-cont {
+  width: 250px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.show-img {
+  width: 67px;
+  height: 67px;
+  margin-bottom: auto;
+}
+
+.show-img,
+img {
+  width: 67px;
+  height: 67px;
+}
+
+.show-incl-o-cont,
+.head {
+  font-size: 16px;
+}
+
+.show-incl-o-cont p {
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+
+.show-button {
+  width: 200px;
+  text-align: center;
+}
+.show-button,
+button {
+  border: none;
+  padding: 15px 47px;
+  border-radius: 5px;
+  background: #9b83e2;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.show-button,
+button:hover {
+  background: #734ce7;
+}
+
+.show-incl-o-cont-two {
+  width: 250px;
+  height: 270px;
+  margin-left: 31px;
+  margin-top: 50px;
+}

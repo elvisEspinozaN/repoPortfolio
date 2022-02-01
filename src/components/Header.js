@@ -17,8 +17,8 @@ const Header = (props) => {
               </Link>
             </li>
             <li>
-              <Link to="/repo/create">
-                <div>Create</div>
+              <Link to="/about">
+                <div>About</div>
               </Link>
             </li>
             <li>
