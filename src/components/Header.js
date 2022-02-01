@@ -6,7 +6,7 @@ const Header = (props) => {
   return (
     <div className="header-header">
       <div className="header-container">
-        <Link style={{ textDecoration: "none" }} to="/home">
+        <Link style={{ textDecoration: "none" }} to="/">
           <h1>repoPortfolio</h1>
         </Link>
         <nav className="header-nav">
