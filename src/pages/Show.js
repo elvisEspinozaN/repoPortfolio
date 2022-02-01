@@ -37,12 +37,12 @@ const Show = (props) => {
           </p>
           <p className="show-p show-url">{repos.url}</p>
           <p className="show-p">{repos.progress}%</p>
-          <div class="show-bar"></div>
+          <div className="show-bar"></div>
         </div>
       </div>
       <div className="show-cont">
         <form onSubmit={submitHandler}>
-          <h3 id="h3" className="show-h3">
+          <h3 id="show-subb" className="show-h3">
             Update
           </h3>
           <p className="show-p" id="p">
@@ -84,10 +84,11 @@ const Show = (props) => {
           />
           <input className="show-button" type="submit" value="Edit" />
         </form>
-
-        <button className="show-button" onClick={deleteHandlerAction}>
-          Delete
-        </button>
+        <div className="show-controls">
+          <button className="show-alternative" onClick={deleteHandlerAction}>
+            Delete
+          </button>
+        </div>
       </div>
     </div>
   );

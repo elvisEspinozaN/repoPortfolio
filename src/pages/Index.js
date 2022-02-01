@@ -3,8 +3,6 @@ import { Link } from "react-router-dom";
 import "./Index.css";
 
 const Index = (props) => {
-  const [repo, setRepo] = useState([]);
-
   const [form, setForm] = useState({
     author: "",
     pName: "",
