@@ -59,7 +59,7 @@ const Main = (props) => {
   return (
     <main>
       <Switch>
-        <Route exact path="/home">
+        <Route exact path="/">
           <Home user={props.user} />
         </Route>
         <Route path="/about">
