@@ -21,9 +21,7 @@ const About = (props) => {
           >
             linkedin
           </a>
-          <a className="a about-a" href="#">
-            email
-          </a>
+          <div>email</div>
         </div>
         <span className="about-the">the app</span>
         <span className="about-app">
