@@ -11,7 +11,7 @@ const Main = (props) => {
   const [repo, setRepo] = useState([]);
 
   // const URL = "http://localhost:3001/repo/";
-  const URL = "https://repo-portfolio.herokuapp.com/repo/";
+  const URL = "https://repoportfolio.herokuapp.com/repo";
 
   const getRepo = async () => {
     const response = await fetch(URL);
